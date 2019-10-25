@@ -15,10 +15,11 @@ async def on_message(message):
         return
     
     
+    print(message)
     r = requests.get(URL)
     s = Soup(r.content)
     trees = s.find(id='totalTrees')["data-count"]
-    await message.author.send(f"Planted {trees} Trees! Awesome!")
+    await message.channel.send(f"Planted {trees} Trees! Awesome!")
     return
 
         

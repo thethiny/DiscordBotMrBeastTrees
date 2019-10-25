@@ -1,0 +1,4 @@
+Discord Sub Bot
+CID: 620528701750378506
+CSecret: tLjGCThVl8ySk6TnkLfjEZyE9iLWiYqj
+Token: NjIwNTI4NzAxNzUwMzc4NTA2.XXYGzg.fYpUVBdu0rByHX9A_arOtEne4WQ

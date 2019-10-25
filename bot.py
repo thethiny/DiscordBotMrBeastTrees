@@ -27,6 +27,5 @@ async def on_ready():
     print('Logged in as:', client.user.name)
     print(client.user.id)
     print()
-    get_anime_list.start()
     
 client.run(TOKEN)

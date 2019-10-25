@@ -14,12 +14,12 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    
-    print(message)
-    r = requests.get(URL)
-    s = Soup(r.content)
-    trees = s.find(id='totalTrees')["data-count"]
-    await message.channel.send(f"Planted {trees} Trees! Awesome!")
+    if message.content.startswith("?treescount"):
+        print(message.content)
+        r = requests.get(URL)
+        s = Soup(r.content)
+        trees = s.find(id='totalTrees')["data-count"]
+        await message.channel.send(f"Planted {trees} Trees! Awesome!")
     return
 
         
